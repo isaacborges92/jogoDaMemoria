@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		571C0D47213AE61B00384CA8 /* iOSCesarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571C0D46213AE61B00384CA8 /* iOSCesarTests.swift */; };
 		701B913B2081637600C9E4DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701B913A2081637600C9E4DE /* AppDelegate.swift */; };
 		701B913D2081637600C9E4DE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701B913C2081637600C9E4DE /* ViewController.swift */; };
 		701B91402081637600C9E4DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 701B913E2081637600C9E4DE /* Main.storyboard */; };
@@ -16,7 +17,20 @@
 		706649DC208220140087A96D /* MemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706649DB208220140087A96D /* MemoryGame.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		571C0D49213AE61B00384CA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 701B912F2081637500C9E4DE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 701B91362081637600C9E4DE;
+			remoteInfo = iOSCesar;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		571C0D44213AE61B00384CA8 /* iOSCesarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSCesarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		571C0D46213AE61B00384CA8 /* iOSCesarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSCesarTests.swift; sourceTree = "<group>"; };
+		571C0D48213AE61B00384CA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		701B91372081637600C9E4DE /* iOSCesar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSCesar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		701B913A2081637600C9E4DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		701B913C2081637600C9E4DE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,6 +43,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		571C0D41213AE61B00384CA8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		701B91342081637600C9E4DE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -39,10 +60,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		571C0D45213AE61B00384CA8 /* iOSCesarTests */ = {
+			isa = PBXGroup;
+			children = (
+				571C0D46213AE61B00384CA8 /* iOSCesarTests.swift */,
+				571C0D48213AE61B00384CA8 /* Info.plist */,
+			);
+			path = iOSCesarTests;
+			sourceTree = "<group>";
+		};
 		701B912E2081637500C9E4DE = {
 			isa = PBXGroup;
 			children = (
 				701B91392081637600C9E4DE /* iOSCesar */,
+				571C0D45213AE61B00384CA8 /* iOSCesarTests */,
 				701B91382081637600C9E4DE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				701B91372081637600C9E4DE /* iOSCesar.app */,
+				571C0D44213AE61B00384CA8 /* iOSCesarTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -97,6 +129,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		571C0D43213AE61B00384CA8 /* iOSCesarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 571C0D4D213AE61B00384CA8 /* Build configuration list for PBXNativeTarget "iOSCesarTests" */;
+			buildPhases = (
+				571C0D40213AE61B00384CA8 /* Sources */,
+				571C0D41213AE61B00384CA8 /* Frameworks */,
+				571C0D42213AE61B00384CA8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				571C0D4A213AE61B00384CA8 /* PBXTargetDependency */,
+			);
+			name = iOSCesarTests;
+			productName = iOSCesarTests;
+			productReference = 571C0D44213AE61B00384CA8 /* iOSCesarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		701B91362081637600C9E4DE /* iOSCesar */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 701B91492081637700C9E4DE /* Build configuration list for PBXNativeTarget "iOSCesar" */;
@@ -124,6 +174,10 @@
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "CESAR School";
 				TargetAttributes = {
+					571C0D43213AE61B00384CA8 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 701B91362081637600C9E4DE;
+					};
 					701B91362081637600C9E4DE = {
 						CreatedOnToolsVersion = 9.3;
 					};
@@ -143,11 +197,19 @@
 			projectRoot = "";
 			targets = (
 				701B91362081637600C9E4DE /* iOSCesar */,
+				571C0D43213AE61B00384CA8 /* iOSCesarTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		571C0D42213AE61B00384CA8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		701B91352081637600C9E4DE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -161,6 +223,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		571C0D40213AE61B00384CA8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				571C0D47213AE61B00384CA8 /* iOSCesarTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		701B91332081637600C9E4DE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -173,6 +243,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		571C0D4A213AE61B00384CA8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 701B91362081637600C9E4DE /* iOSCesar */;
+			targetProxy = 571C0D49213AE61B00384CA8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		701B913E2081637600C9E4DE /* Main.storyboard */ = {
@@ -194,6 +272,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		571C0D4B213AE61B00384CA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7BVP88N479;
+				INFOPLIST_FILE = iOSCesarTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cesar.school.iot.iosavancado.iOSCesarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOSCesar.app/iOSCesar";
+			};
+			name = Debug;
+		};
+		571C0D4C213AE61B00384CA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7BVP88N479;
+				INFOPLIST_FILE = iOSCesarTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cesar.school.iot.iosavancado.iOSCesarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOSCesar.app/iOSCesar";
+			};
+			name = Release;
+		};
 		701B91472081637700C9E4DE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -345,6 +463,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		571C0D4D213AE61B00384CA8 /* Build configuration list for PBXNativeTarget "iOSCesarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				571C0D4B213AE61B00384CA8 /* Debug */,
+				571C0D4C213AE61B00384CA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		701B91322081637500C9E4DE /* Build configuration list for PBXProject "iOSCesar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
